@@ -13,10 +13,15 @@ class CreateTodo extends Component {
     this.setState({text: event.target.value})
   }
   
+  handleSubmit = event => {
+    event.preventDefault()
+    
+  }
+  
   render() {
     return(
       <div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
         <p>
         <label>add to do</label>
         <input type="text" onChange={this.handleChange} value={this.state.text}/>

@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import {connect} from 'react-redux';
 
 class CreateTodo extends Component {
   constructor(){
@@ -28,4 +29,4 @@ class CreateTodo extends Component {
   }
 }
 
-export default CreateTodo;
+export default connect(null, mapDispatchToProps)(CreateTodo);

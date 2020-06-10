@@ -8,7 +8,7 @@ class CreateTodo extends Component {
     }
   }
   
-  handleChange(event) {
+  handleChange = event => {
     this.setState({text: event.target.value})
   }
   
